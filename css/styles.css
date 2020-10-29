@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+    background-image: url('../img/banner-2.jpg');
+    background-size: cover;
+    /*tamaño de foto*/
+    background-attachment: fixed;
+    /*fondo fijo*/
+    padding: 10% 20px;
+    text-align: center;
+    color: black;
+}
+
+.header h1 {
+    font-size: 100px;
+}
+
+
+/*Clases de columnas*/
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 10%;
+}
+
+.one-column h1 {
+    font-size: 6vw;
+    text-align: center;
+    font-weight: 0;
+}
+
+.two-column {
+    padding: 2%;
+    float: left;
+    width: 50%;
+}
+
+.two-column img {
+    width: 100%;
+}
+
+.two-column h1 {
+    font-size: 5vw;
+    text-align: center;
+}
+
+.two-column p {
+    font-size: 3vw;
+}
+
+.four-column {
+    padding: 2%;
+    float: left;
+    width: 25%;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+.four-column p {
+    text-align: center;
+}
+
+
+/*ID´s*/
+
+#section-2 {
+    background-color: #28eca5;
+}
+
+#section-5 {
+    background-color: #46a6fc;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+}
+
+#footer p {
+    text-align: left;
+    font-size: 20px;
+}
+
+
+/*Clases auxiliares*/
+
+.padding-0 {
+    padding: 0%;
+}
+
+@media screen and (max-width:700px) {
+    .two-column {
+        width: 100%;
+    }
+    .four-column {
+        width: 50%;
+    }
+}
